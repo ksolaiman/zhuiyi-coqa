@@ -1,0 +1,18 @@
+http://downloads.cs.stanford.edu/nlp/data/coqa/drqa-pgnet-coqa-dev-hist1.txt.json
+
+4 types of answer as gold label -
+1. spans
+2. yes
+3. no
+4. unknown
+
+
+spans are selected with best f1-score from data like this -
+http://downloads.cs.stanford.edu/nlp/data/coqa/coqa-dev-v1.0.json
+
+
+https://colab.research.google.com/github/stanfordnlp/stanza/blob/master/demo/Stanza_CoreNLP_Interface.ipynb#scrollTo=S0xb9BHt__gx
+
+
+https://github.com/pytorch/fairseq/blob/dea66cc294a18dd4d9e59aa0af8d51f951e83884/fairseq/model_parallel/models/roberta/model.py#L91 line 159
+# take <s> token (equiv. to [CLS])
